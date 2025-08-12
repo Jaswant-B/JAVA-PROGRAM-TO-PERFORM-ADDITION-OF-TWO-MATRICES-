@@ -61,9 +61,48 @@ o View output in the Console window.
 o After finishing, click File > Exit to close Eclipse IDE.
 
 
+
 ## PROGRAM:
 
+public class MatrixAddition {
+    public static void main(String[] args) {
+        int[][] matrix1 = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        int[][] matrix2 = {
+            {9, 8, 7},
+            {6, 5, 4},
+            {3, 2, 1}
+        };
+
+        int[][] result = new int[3][3]; // Resultant matrix
+
+        // Adding two matrices
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                result[i][j] = matrix1[i][j] + matrix2[i][j];
+            }
+        }
+
+        // Printing the result
+        System.out.println("Resultant Matrix:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(result[i][j] + " ");
+            }
+            System.out.println(); // New line after each row
+        }
+    }
+}
+
+
 ## OUTPUT:
+<img width="1918" height="1016" alt="image" src="https://github.com/user-attachments/assets/ca8baea8-9665-4ccc-ae6b-36fab15b142c" />
+
+
 
 ## RESULT:
 
